@@ -1,0 +1,263 @@
+﻿<mah:MetroWindow  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="xBRIMS.Windows.ViewBridgeInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xBRIMS.Windows"
+        mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource Locator},Path=ViewBridgeInfo}"
+        WindowStartupLocation="CenterScreen"
+        Title="桥梁信息明细" Height="800" Width="1200">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Text="{Binding ChnDeptBridgeName}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid Margin="10" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <!-- 添加其他行 -->
+                    </Grid.RowDefinitions>
+                    <Label    Grid.Row=" 0" Grid.Column="0"   Content="所属区域中心:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 0" Grid.Column="1"   x:Name="ChnAfairsCenter"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnAfairsCenter}" />
+                    <Label    Grid.Row=" 0" Grid.Column="2"   Content="所在区域:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 0" Grid.Column="3"   x:Name="LocArea"                              VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding LocArea}" />
+                    <Label    Grid.Row=" 0" Grid.Column="4"   Content="航道名称:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 0" Grid.Column="5"   x:Name="ChnName"                              VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnName}" />
+                    <Label    Grid.Row=" 0" Grid.Column="6"   Content="起点:"                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 0" Grid.Column="7"   x:Name="StartPoint"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding StartPoint}" />
+                    <Label    Grid.Row=" 0" Grid.Column="8"   Content="终点:"                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 0" Grid.Column="9"   x:Name="EndPoint"                             VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding StartPoint}" />
+
+                    <Label    Grid.Row=" 1" Grid.Column="0"   Content="里程:"                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 1" Grid.Column="1"   x:Name="Mileage"                              VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding Mileage}" />
+                    <Label    Grid.Row=" 1" Grid.Column="2"   Content="航道部门桥梁名称:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 1" Grid.Column="3"   x:Name="ChnDeptBridgeName"                    VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnDeptBridgeName}" />
+                    <Label    Grid.Row=" 1" Grid.Column="4"   Content="交通部桥梁名称:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 1" Grid.Column="5"   x:Name="TrnDeptBridgeName"                    VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding TrnDeptBridgeName}" />
+                    <Label    Grid.Row=" 1" Grid.Column="6"   Content="铁路部门桥梁名称:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 1" Grid.Column="7"   x:Name="RawDeptBridgeName"                    VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding RawDeptBridgeName}" />
+                    <Label    Grid.Row=" 1" Grid.Column="8"   Content="公路部门桥梁名称:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 1" Grid.Column="9"   x:Name="HgwDeptartmentBridgeName"             VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding HgwDeptartmentBridgeName}" />
+
+                    <Label    Grid.Row=" 2" Grid.Column="0"   Content="桥梁其他名称:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 2" Grid.Column="1"   x:Name="OtherBridgeName"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding OtherBridgeName}" />
+                    <Label    Grid.Row=" 2" Grid.Column="2"   Content="航道现状维护等级:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 2" Grid.Column="3"   x:Name="ChnMainLevel"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnMainLevel}" />
+                    <Label    Grid.Row=" 2" Grid.Column="4"   Content="航道技术定级等级:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 2" Grid.Column="5"   x:Name="ChnTechLevel"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnTechLevel}" />
+                    <Label    Grid.Row=" 2" Grid.Column="6"   Content="航道发展规划等级:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 2" Grid.Column="7"   x:Name="ChnPlanLevel"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnPlanLevel}" />
+                    <Label    Grid.Row=" 2" Grid.Column="8"   Content="航标配布类别:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 2" Grid.Column="9"   x:Name="NavMarkDistCate"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding NavMarkDistCate}" />
+
+                    <Label    Grid.Row=" 3" Grid.Column="0"   Content="航道设计水深:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 3" Grid.Column="1"   x:Name="ChnDegnDeptth"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnDegnDeptth}" />
+                    <Label    Grid.Row=" 3" Grid.Column="2"   Content="航道维护水深:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="3"   x:Name="ChnMainDeptth"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ChnMainDeptth}" />
+                    <Label    Grid.Row=" 3" Grid.Column="4"   Content="维护水深年保障率:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="5"   x:Name="MainDeptthRate"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding MainDeptthRate}" />
+                    <Label    Grid.Row=" 3" Grid.Column="6"   Content="桥梁所在地区:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="7"   x:Name="LocRegion"                            VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding LocRegion}" />
+                    <Label    Grid.Row=" 3" Grid.Column="8"   Content="桥梁位置:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="9"   x:Name="BridgeLoc"                            VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeLoc}" />
+
+                    <Label    Grid.Row=" 4" Grid.Column="0"   Content="桥梁控制点坐标:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 4" Grid.Column="1"   x:Name="BridgeCoor"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeCoor}" />
+                    <Label    Grid.Row=" 4" Grid.Column="2"   Content="是否跨河:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="3"   x:Name="CrossRiver"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding CrossRiver}" />
+                    <Label    Grid.Row=" 4" Grid.Column="4"   Content="通航批复孔数:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="5"   x:Name="ApproNavHoles"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ApproNavHoles}" />
+                    <Label    Grid.Row=" 4" Grid.Column="6"   Content="通航实际孔数:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="7"   x:Name="ActualNavHoles"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ActualNavHoles}" />
+
+                    <Label    Grid.Row=" 5" Grid.Column="0"   Content="上行孔或单孔批复跨径:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 5" Grid.Column="1"   x:Name="UpApproSpan"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpApproSpan}" />
+                    <Label    Grid.Row=" 5" Grid.Column="2"   Content="上行孔或单孔实际跨径:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="3"   x:Name="UpActualSpan"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpActualSpan}" />
+                    <Label    Grid.Row=" 5" Grid.Column="4"   Content="上行孔或单孔批复净宽:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="5"   x:Name="UpApproWidth"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpApproWidth}" />
+                    <Label    Grid.Row=" 5" Grid.Column="6"   Content="上行孔或单孔实际净宽:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="7"   x:Name="UpActualWidth"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpActualWidth}" />
+                    <Label    Grid.Row=" 5" Grid.Column="8"   Content="上行孔或单孔批复净高:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="9"   x:Name="UpApproHeight"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  UpApproHeight}" />
+
+                    <Label    Grid.Row=" 6" Grid.Column="0"   Content="上行孔或单孔实际净高:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 6" Grid.Column="1"   x:Name="UpActualHeight"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpActualHeight}" />
+                    <Label    Grid.Row=" 6" Grid.Column="2"   Content="下行孔批复跨径:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="3"   x:Name="DownApproSpan"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DownApproSpan}" />
+                    <Label    Grid.Row=" 6" Grid.Column="4"   Content="下行孔实际跨径:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="5"   x:Name="DownActualSpan"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DownActualSpan}" />
+                    <Label    Grid.Row=" 6" Grid.Column="6"   Content="下行孔批复净宽:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="7"   x:Name="DownApproWidth"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DownApproWidth}" />
+                    <Label    Grid.Row=" 6" Grid.Column="8"   Content="下行孔实际净宽:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="9"   x:Name="DownActualWidth"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  DownActualWidth}" />
+
+
+                    <Label    Grid.Row=" 7" Grid.Column="0"   Content="下行孔批复净高:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 7" Grid.Column="1"   x:Name="DownApproHeight"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DownApproHeight}" />
+                    <Label    Grid.Row=" 7" Grid.Column="2"   Content="下行孔实际净高:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="3"   x:Name="DownActualHeight"                     VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DownActualHeight}" />
+                    <Label    Grid.Row=" 7" Grid.Column="4"   Content="批复设计最高通航水位:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="5"   x:Name="ApproMaxWaterLevel"                   VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ApproMaxWaterLevel}" />
+                    <Label    Grid.Row=" 7" Grid.Column="6"   Content="标准设计最高通航水位:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="7"   x:Name="StdMaxWaterLevel"                     VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding StdMaxWaterLevel}" />
+                    <Label    Grid.Row=" 7" Grid.Column="8"   Content="采用值设计最高通航水位:"             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="9"   x:Name="AdopDesgMaxWaterLevel"                VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  AdopDesgMaxWaterLevel}" />
+
+                    <Label    Grid.Row=" 8" Grid.Column="0"   Content="采用标准设计最高通航水位:"           VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 8" Grid.Column="1"   x:Name="StdDesgMaxWaterLevel"                 VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding StdDesgMaxWaterLevel}" />
+                    <Label    Grid.Row=" 8" Grid.Column="2"   Content="上行孔或单孔上底宽:"                 VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="3"   x:Name="UpBottomWidth"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpBottomWidth}" />
+                    <Label    Grid.Row=" 8" Grid.Column="4"   Content="下行孔上底宽:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="5"   x:Name="DownBottomWidth"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DownBottomWidth}" />
+                    <Label    Grid.Row=" 8" Grid.Column="6"   Content="上行孔或单孔侧高:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="7"   x:Name="UpSideHeight"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding UpSideHeight}" />
+                    <Label    Grid.Row=" 8" Grid.Column="8"   Content="下行孔侧高:"                         VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="9"   x:Name="DownSideHeight"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  DownSideHeight}" />
+
+                    <Label    Grid.Row=" 9" Grid.Column="0"   Content="设计最低通航水位:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row=" 9" Grid.Column="1"   x:Name="DegnMinWaterLevel"                    VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DegnMinWaterLevel}" />
+                    <Label    Grid.Row=" 9" Grid.Column="2"   Content="设计最低通航标准水位:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="3"   x:Name="DegnStdMinWaterLevel"                 VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding DegnStdMinWaterLevel}" />
+                    <Label    Grid.Row=" 9" Grid.Column="4"   Content="采用水位依据来源:"                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="5"   x:Name="WaterLevelRefSource"                  VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding WaterLevelRefSource}" />
+                    <Label    Grid.Row=" 9" Grid.Column="6"   Content="批准文号:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="7"   x:Name="ApproDocNum"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ApproDocNum}" />
+                    <Label    Grid.Row=" 9" Grid.Column="8"   Content="执行通航标准:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="9"   x:Name="ImpNavStd"                            VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  ImpNavStd}" />
+
+                    <Label    Grid.Row="10" Grid.Column="0"   Content="建成时间:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="10" Grid.Column="1"   x:Name="CompleDate"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding CompleDate}" />
+                    <Label    Grid.Row="10" Grid.Column="2"   Content="是否专项验收:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="3"   x:Name="SpecialAccep"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding SpecialAccep}" />
+                    <Label    Grid.Row="10" Grid.Column="4"   Content="是否满足审批标准要求:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="5"   x:Name="ApproStdLevelReq"                     VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ApproStdLevelReq}" />
+                    <Label    Grid.Row="10" Grid.Column="6"   Content="是否满足现状等级要求:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="7"   x:Name="CurrLevelReq"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding CurrLevelReq}" />
+                    <Label    Grid.Row="10" Grid.Column="8"   Content="是否满足技术等级要求:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="9"   x:Name="TechLevelReq"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  TechLevelReq}" />
+
+                    <Label    Grid.Row="11" Grid.Column="0"   Content="是否满足规划等级要求:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="11" Grid.Column="1"   x:Name="PlanLevelReq"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding PlanLevelReq}" />
+                    <Label    Grid.Row="11" Grid.Column="2"   Content="桥涵标:"                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="3"   x:Name="BridgeSpans"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeSpans}" />
+                    <Label    Grid.Row="11" Grid.Column="4"   Content="桥柱灯:"                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="5"   x:Name="bridgePillarLights"                   VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding bridgePillarLights}" />
+                    <Label    Grid.Row="11" Grid.Column="6"   Content="桥区水上航标:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="7"   x:Name="WaterwayMarks"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding WaterwayMarks}" />
+                    <Label    Grid.Row="11" Grid.Column="8"   Content="净高标尺设置:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="9"   x:Name="HeightScaleSet"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  HeightScaleSet}" />
+
+                    <Label    Grid.Row="12" Grid.Column="0"   Content="航标其他标志:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="12" Grid.Column="1"   x:Name="otherNavMarks"                        VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding otherNavMarks}" />
+                    <Label    Grid.Row="12" Grid.Column="2"   Content="航标养护单位:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="12" Grid.Column="3"   x:Name="MarkMainDept"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding MarkMainDept}" />
+                    <Label    Grid.Row="12" Grid.Column="4"   Content="航标设置批文:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="12" Grid.Column="5"   x:Name="MarkSetAppro"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding MarkSetAppro}" />
+                    <Label    Grid.Row="12" Grid.Column="6"   Content="航标是否满足规范要求:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="12" Grid.Column="7"   x:Name="MarkSpecReq"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding MarkSpecReq}" />
+                    <Label    Grid.Row="12" Grid.Column="8"   Content="桥梁类别:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="12" Grid.Column="9"   x:Name="BridgeCate"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  BridgeCate}" />
+
+                    <Label    Grid.Row="13" Grid.Column="0"   Content="桥梁管理单位:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="13" Grid.Column="1"   x:Name="BridgeMgmtDept"                       VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeMgmtDept}" />
+                    <Label    Grid.Row="13" Grid.Column="2"   Content="桥梁结构型式:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="13" Grid.Column="3"   x:Name="BridgeStrucType"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeStrucType}" />
+                    <Label    Grid.Row="13" Grid.Column="4"   Content="桥梁管理单位联系人:"                 VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="13" Grid.Column="5"   x:Name="BridgeMgmtConPerson"                  VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeMgmtConPerson}" />
+                    <Label    Grid.Row="13" Grid.Column="6"   Content="联系方式:"                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="13" Grid.Column="7"   x:Name="ContactInfo"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding ContactInfo}" />
+                    <Label    Grid.Row="13" Grid.Column="8"   Content="近五年桥梁被碰撞情况:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="13" Grid.Column="9"   x:Name="BridgeCol5Years"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  BridgeCol5Years}" />
+
+                    <Label    Grid.Row="14" Grid.Column="0"   Content="防撞设施运行维护单位:"               VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="14" Grid.Column="1"   x:Name="AntiColMgmtDept"                      VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding AntiColMgmtDept}" />
+                    <Label    Grid.Row="14" Grid.Column="2"   Content="是否有防撞设施:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="14" Grid.Column="3"   x:Name="IsAntiCol"                            VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding IsAntiCol}" />
+                    <Label    Grid.Row="14" Grid.Column="4"   Content="防撞结构型方式:"                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="14" Grid.Column="5"   x:Name="AntiColStrucType"                     VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding AntiColStrucType}" />
+                    <Label    Grid.Row="14" Grid.Column="6"   Content="防撞设施数量:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="14" Grid.Column="7"   x:Name="AntiColNum"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding AntiColNum}" />
+                    <Label    Grid.Row="14" Grid.Column="8"   Content="桥墩防撞标准:"                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="14" Grid.Column="9"   x:Name="AntiColStd"                           VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding AntiColStd }" />
+
+                    <Label    Grid.Row="15" Grid.Column="0"   Content="是否有主动预警系统:"                  VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="15" Grid.Column="1"   x:Name="IsActWarnSys"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding IsActWarnSys}" />
+                    <Label    Grid.Row="15" Grid.Column="2"   Content="净高显示功能情况:"                    VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="15" Grid.Column="3"   x:Name="HeightDisplay"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding HeightDisplay}" />
+                    <Label    Grid.Row="15" Grid.Column="4"   Content="净高显示是否航道部门建设:"            VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="15" Grid.Column="5"   x:Name="HeightDisplayChnDept"                  VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding HeightDisplayChnDept}" />
+                    <Label    Grid.Row="15" Grid.Column="6"   Content="净高显示是否移交区域航道事务中心:"    VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="15" Grid.Column="7"   x:Name="HeightDisplayTrnCent"                  VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding HeightDisplayTrnCent}" />
+                    <Label    Grid.Row="15" Grid.Column="8"   Content="净高显示故障情况:"                    VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="15" Grid.Column="9"   x:Name="HeightDisplayStatus"                   VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding HeightDisplayStatus }" />
+
+                    <Label    Grid.Row="16" Grid.Column="0"   Content="桥梁状态:"                            VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="16" Grid.Column="1"   x:Name="BridgeStatus"                          VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgeStatus}" />
+                    <Label    Grid.Row="16" Grid.Column="2"   Content="备注:"                                VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="16" Grid.Column="3"   x:Name="Remark"                                VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding Remark}" />
+                    <Label    Grid.Row="16" Grid.Column="4"   Content="桥梁照片01:"                          VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="16" Grid.Column="5"   x:Name="BridgePhoto01"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgePhoto01}" />
+                    <Label    Grid.Row="16" Grid.Column="6"   Content="桥梁照片02:"                          VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="16" Grid.Column="7"   x:Name="BridgePhoto02"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgePhoto02}" />
+                    <Label    Grid.Row="16" Grid.Column="8"   Content="桥梁照片03:"                          VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="16" Grid.Column="9"   x:Name="BridgePhoto03"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding  BridgePhoto03}" />
+
+                    <Label    Grid.Row="17" Grid.Column="0"   Content="桥梁照片04:"                          VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                    <TextBox  Grid.Row="17" Grid.Column="1"   x:Name="BridgePhoto04"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgePhoto04}" />
+                    <Label    Grid.Row="17" Grid.Column="2"   Content="桥梁照片05:"                          VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="17" Grid.Column="3"   x:Name="BridgePhoto05"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgePhoto05}" />
+                    <Label    Grid.Row="17" Grid.Column="4"   Content="桥梁照片06:"                          VerticalAlignment="Bottom" FontSize="14" FontWeight="Bold" Margin="10,0,40,4" Grid.ColumnSpan="2" />
+                    <TextBox  Grid.Row="17" Grid.Column="5"   x:Name="BridgePhoto06"                         VerticalAlignment="Center" FontSize="12" Margin="5" Text="{Binding BridgePhoto06}" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+               
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</mah:MetroWindow>

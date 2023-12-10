@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="brimsModelStoreContainer" CdmEntityContainer="brimsEntities">
+    <EntitySetMapping Name="BridgeInfo">
+      <EntityTypeMapping TypeName="brimsModel.BridgeInfo">
+        <MappingFragment StoreEntitySet="BridgeInfo">
+          <ScalarProperty Name="BridgeID" ColumnName="BridgeID" />
+          <ScalarProperty Name="ChnAfairsCenter" ColumnName="ChnAfairsCenter" />
+          <ScalarProperty Name="LocArea" ColumnName="LocArea" />
+          <ScalarProperty Name="ChnName" ColumnName="ChnName" />
+          <ScalarProperty Name="StartPoint" ColumnName="StartPoint" />
+          <ScalarProperty Name="EndPoint" ColumnName="EndPoint" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="ChnDeptBridgeName" ColumnName="ChnDeptBridgeName" />
+          <ScalarProperty Name="TrnDeptBridgeName" ColumnName="TrnDeptBridgeName" />
+          <ScalarProperty Name="RawDeptBridgeName" ColumnName="RawDeptBridgeName" />
+          <ScalarProperty Name="HgwDeptartmentBridgeName" ColumnName="HgwDeptartmentBridgeName" />
+          <ScalarProperty Name="OtherBridgeName" ColumnName="OtherBridgeName" />
+          <ScalarProperty Name="ChnMainLevel" ColumnName="ChnMainLevel" />
+          <ScalarProperty Name="ChnTechLevel" ColumnName="ChnTechLevel" />
+          <ScalarProperty Name="ChnPlanLevel" ColumnName="ChnPlanLevel" />
+          <ScalarProperty Name="NavMarkDistCate" ColumnName="NavMarkDistCate" />
+          <ScalarProperty Name="ChnDegnDeptth" ColumnName="ChnDegnDeptth" />
+          <ScalarProperty Name="ChnMainDeptth" ColumnName="ChnMainDeptth" />
+          <ScalarProperty Name="MainDeptthRate" ColumnName="MainDeptthRate" />
+          <ScalarProperty Name="LocRegion" ColumnName="LocRegion" />
+          <ScalarProperty Name="BridgeLoc" ColumnName="BridgeLoc" />
+          <ScalarProperty Name="BridgeCoor" ColumnName="BridgeCoor" />
+          <ScalarProperty Name="CrossRiver" ColumnName="CrossRiver" />
+          <ScalarProperty Name="ApproNavHoles" ColumnName="ApproNavHoles" />
+          <ScalarProperty Name="ActualNavHoles" ColumnName="ActualNavHoles" />
+          <ScalarProperty Name="UpApproSpan" ColumnName="UpApproSpan" />
+          <ScalarProperty Name="UpActualSpan" ColumnName="UpActualSpan" />
+          <ScalarProperty Name="UpApproWidth" ColumnName="UpApproWidth" />
+          <ScalarProperty Name="UpActualWidth" ColumnName="UpActualWidth" />
+          <ScalarProperty Name="UpApproHeight" ColumnName="UpApproHeight" />
+          <ScalarProperty Name="UpActualHeight" ColumnName="UpActualHeight" />
+          <ScalarProperty Name="DownApproSpan" ColumnName="DownApproSpan" />
+          <ScalarProperty Name="DownActualSpan" ColumnName="DownActualSpan" />
+          <ScalarProperty Name="DownApproWidth" ColumnName="DownApproWidth" />
+          <ScalarProperty Name="DownActualWidth" ColumnName="DownActualWidth" />
+          <ScalarProperty Name="DownApproHeight" ColumnName="DownApproHeight" />
+          <ScalarProperty Name="DownActualHeight" ColumnName="DownActualHeight" />
+          <ScalarProperty Name="ApproMaxWaterLevel" ColumnName="ApproMaxWaterLevel" />
+          <ScalarProperty Name="StdMaxWaterLevel" ColumnName="StdMaxWaterLevel" />
+          <ScalarProperty Name="AdopDesgMaxWaterLevel" ColumnName="AdopDesgMaxWaterLevel" />
+          <ScalarProperty Name="StdDesgMaxWaterLevel" ColumnName="StdDesgMaxWaterLevel" />
+          <ScalarProperty Name="UpBottomWidth" ColumnName="UpBottomWidth" />
+          <ScalarProperty Name="DownBottomWidth" ColumnName="DownBottomWidth" />
+          <ScalarProperty Name="UpSideHeight" ColumnName="UpSideHeight" />
+          <ScalarProperty Name="DownSideHeight" ColumnName="DownSideHeight" />
+          <ScalarProperty Name="DegnMinWaterLevel" ColumnName="DegnMinWaterLevel" />
+          <ScalarProperty Name="DegnStdMinWaterLevel" ColumnName="DegnStdMinWaterLevel" />
+          <ScalarProperty Name="WaterLevelRefSource" ColumnName="WaterLevelRefSource" />
+          <ScalarProperty Name="ApproDocNum" ColumnName="ApproDocNum" />
+          <ScalarProperty Name="ImpNavStd" ColumnName="ImpNavStd" />
+          <ScalarProperty Name="CompleDate" ColumnName="CompleDate" />
+          <ScalarProperty Name="SpecialAccep" ColumnName="SpecialAccep" />
+          <ScalarProperty Name="ApproStdLevelReq" ColumnName="ApproStdLevelReq" />
+          <ScalarProperty Name="CurrLevelReq" ColumnName="CurrLevelReq" />
+          <ScalarProperty Name="TechLevelReq" ColumnName="TechLevelReq" />
+          <ScalarProperty Name="PlanLevelReq" ColumnName="PlanLevelReq" />
+          <ScalarProperty Name="BridgeSpans" ColumnName="BridgeSpans" />
+          <ScalarProperty Name="bridgePillarLights" ColumnName="bridgePillarLights" />
+          <ScalarProperty Name="WaterwayMarks" ColumnName="WaterwayMarks" />
+          <ScalarProperty Name="HeightScaleSet" ColumnName="HeightScaleSet" />
+          <ScalarProperty Name="otherNavMarks" ColumnName="otherNavMarks" />
+          <ScalarProperty Name="MarkMainDept" ColumnName="MarkMainDept" />
+          <ScalarProperty Name="MarkSetAppro" ColumnName="MarkSetAppro" />
+          <ScalarProperty Name="MarkSpecReq" ColumnName="MarkSpecReq" />
+          <ScalarProperty Name="BridgeCate" ColumnName="BridgeCate" />
+          <ScalarProperty Name="BridgeMgmtDept" ColumnName="BridgeMgmtDept" />
+          <ScalarProperty Name="BridgeStrucType" ColumnName="BridgeStrucType" />
+          <ScalarProperty Name="BridgeMgmtConPerson" ColumnName="BridgeMgmtConPerson" />
+          <ScalarProperty Name="ContactInfo" ColumnName="ContactInfo" />
+          <ScalarProperty Name="BridgeCol5Years" ColumnName="BridgeCol5Years" />
+          <ScalarProperty Name="AntiColMgmtDept" ColumnName="AntiColMgmtDept" />
+          <ScalarProperty Name="IsAntiCol" ColumnName="IsAntiCol" />
+          <ScalarProperty Name="AntiColStrucType" ColumnName="AntiColStrucType" />
+          <ScalarProperty Name="AntiColNum" ColumnName="AntiColNum" />
+          <ScalarProperty Name="AntiColStd" ColumnName="AntiColStd" />
+          <ScalarProperty Name="IsActWarnSys" ColumnName="IsActWarnSys" />
+          <ScalarProperty Name="HeightDisplay" ColumnName="HeightDisplay" />
+          <ScalarProperty Name="HeightDisplayChnDept" ColumnName="HeightDisplayChnDept" />
+          <ScalarProperty Name="HeightDisplayTrnCent" ColumnName="HeightDisplayTrnCent" />
+          <ScalarProperty Name="HeightDisplayStatus" ColumnName="HeightDisplayStatus" />
+          <ScalarProperty Name="BridgeStatus" ColumnName="BridgeStatus" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BridgePhoto01" ColumnName="BridgePhoto01" />
+          <ScalarProperty Name="BridgePhoto02" ColumnName="BridgePhoto02" />
+          <ScalarProperty Name="BridgePhoto03" ColumnName="BridgePhoto03" />
+          <ScalarProperty Name="BridgePhoto04" ColumnName="BridgePhoto04" />
+          <ScalarProperty Name="BridgePhoto05" ColumnName="BridgePhoto05" />
+          <ScalarProperty Name="BridgePhoto06" ColumnName="BridgePhoto06" />
+          <ScalarProperty Name="Bakup01" ColumnName="Bakup01" />
+          <ScalarProperty Name="Bakup02" ColumnName="Bakup02" />
+          <ScalarProperty Name="Bakup03" ColumnName="Bakup03" />
+          <ScalarProperty Name="Bakup04" ColumnName="Bakup04" />
+          <ScalarProperty Name="Bakup05" ColumnName="Bakup05" />
+          <ScalarProperty Name="Bakup06" ColumnName="Bakup06" />
+          <ScalarProperty Name="Bakup07" ColumnName="Bakup07" />
+          <ScalarProperty Name="Bakup08" ColumnName="Bakup08" />
+          <ScalarProperty Name="Bakup09" ColumnName="Bakup09" />
+          <ScalarProperty Name="Bakup10" ColumnName="Bakup10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NavigationInfo">
+      <EntityTypeMapping TypeName="brimsModel.NavigationInfo">
+        <MappingFragment StoreEntitySet="NavigationInfo">
+          <ScalarProperty Name="NavigationID" ColumnName="NavigationID" />
+          <ScalarProperty Name="DamNavStrucType" ColumnName="DamNavStrucType" />
+          <ScalarProperty Name="DamName" ColumnName="DamName" />
+          <ScalarProperty Name="ChnName" ColumnName="ChnName" />
+          <ScalarProperty Name="ChnCurrStatus" ColumnName="ChnCurrStatus" />
+          <ScalarProperty Name="ChnPlanStatus" ColumnName="ChnPlanStatus" />
+          <ScalarProperty Name="DamLocation" ColumnName="DamLocation" />
+          <ScalarProperty Name="BuiltYear" ColumnName="BuiltYear" />
+          <ScalarProperty Name="Scale" ColumnName="Scale" />
+          <ScalarProperty Name="HasDam" ColumnName="HasDam" />
+          <ScalarProperty Name="DamRegistInd" ColumnName="DamRegistInd" />
+          <ScalarProperty Name="DamRegistYear" ColumnName="DamRegistYear" />
+          <ScalarProperty Name="DamSafeEvalInd" ColumnName="DamSafeEvalInd" />
+          <ScalarProperty Name="DamSafeEvalYear" ColumnName="DamSafeEvalYear" />
+          <ScalarProperty Name="DamSafeEvalRusult" ColumnName="DamSafeEvalRusult" />
+          <ScalarProperty Name="DamOperDept" ColumnName="DamOperDept" />
+          <ScalarProperty Name="DamOperDeptResp" ColumnName="DamOperDeptResp" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="DamType" ColumnName="DamType" />
+          <ScalarProperty Name="DamMaxHeight" ColumnName="DamMaxHeight" />
+          <ScalarProperty Name="DamTopEle" ColumnName="DamTopEle" />
+          <ScalarProperty Name="CheckFloodLvl" ColumnName="CheckFloodLvl" />
+          <ScalarProperty Name="CheckFloodYear" ColumnName="CheckFloodYear" />
+          <ScalarProperty Name="DesignFloodLvl" ColumnName="DesignFloodLvl" />
+          <ScalarProperty Name="DesignFloodYear" ColumnName="DesignFloodYear" />
+          <ScalarProperty Name="NorWaterLvl" ColumnName="NorWaterLvl" />
+          <ScalarProperty Name="LimWaterLvl" ColumnName="LimWaterLvl" />
+          <ScalarProperty Name="DamRegDept" ColumnName="DamRegDept" />
+          <ScalarProperty Name="hasLock" ColumnName="hasLock" />
+          <ScalarProperty Name="LockLevel" ColumnName="LockLevel" />
+          <ScalarProperty Name="LockScale" ColumnName="LockScale" />
+          <ScalarProperty Name="UpMaxWaterLvl" ColumnName="UpMaxWaterLvl" />
+          <ScalarProperty Name="UpStdMaxWaterLvl" ColumnName="UpStdMaxWaterLvl" />
+          <ScalarProperty Name="UpMinWaterLvl" ColumnName="UpMinWaterLvl" />
+          <ScalarProperty Name="UpStdMinWaterLvl" ColumnName="UpStdMinWaterLvl" />
+          <ScalarProperty Name="DownMaxWaterLvl" ColumnName="DownMaxWaterLvl" />
+          <ScalarProperty Name="DownStdMaxWaterLvl" ColumnName="DownStdMaxWaterLvl" />
+          <ScalarProperty Name="DownMinWaterLvl" ColumnName="DownMinWaterLvl" />
+          <ScalarProperty Name="DownStdMinWaterLvl" ColumnName="DownStdMinWaterLvl" />
+          <ScalarProperty Name="LockOperDept" ColumnName="LockOperDept" />
+          <ScalarProperty Name="LockOperDeptResp" ColumnName="LockOperDeptResp" />
+          <ScalarProperty Name="LockRegDept" ColumnName="LockRegDept" />
+          <ScalarProperty Name="RegDeptResp" ColumnName="RegDeptResp" />
+          <ScalarProperty Name="LockSafeEval" ColumnName="LockSafeEval" />
+          <ScalarProperty Name="LockSafeEvalYear" ColumnName="LockSafeEvalYear" />
+          <ScalarProperty Name="LockSafeEvalResult" ColumnName="LockSafeEvalResult" />
+          <ScalarProperty Name="LockNavStatus" ColumnName="LockNavStatus" />
+          <ScalarProperty Name="Near1to3YPass" ColumnName="Near1to3YPass" />
+          <ScalarProperty Name="StruTechStatus" ColumnName="StruTechStatus" />
+          <ScalarProperty Name="HasApprOpSch" ColumnName="HasApprOpSch" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Photo01" ColumnName="Photo01" />
+          <ScalarProperty Name="Photo02" ColumnName="Photo02" />
+          <ScalarProperty Name="Photo03" ColumnName="Photo03" />
+          <ScalarProperty Name="Photo04" ColumnName="Photo04" />
+          <ScalarProperty Name="Photo05" ColumnName="Photo05" />
+          <ScalarProperty Name="Photo06" ColumnName="Photo06" />
+          <ScalarProperty Name="Backup01" ColumnName="Backup01" />
+          <ScalarProperty Name="Backup02" ColumnName="Backup02" />
+          <ScalarProperty Name="Backup03" ColumnName="Backup03" />
+          <ScalarProperty Name="Backup04" ColumnName="Backup04" />
+          <ScalarProperty Name="Backup05" ColumnName="Backup05" />
+          <ScalarProperty Name="Backup06" ColumnName="Backup06" />
+          <ScalarProperty Name="Backup07" ColumnName="Backup07" />
+          <ScalarProperty Name="Backup08" ColumnName="Backup08" />
+          <ScalarProperty Name="Backup09" ColumnName="Backup09" />
+          <ScalarProperty Name="Backup10" ColumnName="Backup10" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

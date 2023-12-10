@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="brimsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BridgeInfo">
+    <Key>
+      <PropertyRef Name="BridgeID" />
+    </Key>
+    <Property Name="BridgeID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChnAfairsCenter" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LocArea" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ChnName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StartPoint" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="EndPoint" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Mileage" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ChnDeptBridgeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TrnDeptBridgeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RawDeptBridgeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HgwDeptartmentBridgeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OtherBridgeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ChnMainLevel" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ChnTechLevel" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ChnPlanLevel" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="NavMarkDistCate" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ChnDegnDeptth" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ChnMainDeptth" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="MainDeptthRate" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="LocRegion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeLoc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeCoor" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CrossRiver" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ApproNavHoles" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ActualNavHoles" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpApproSpan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpActualSpan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpApproWidth" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpActualWidth" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpApproHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpActualHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownApproSpan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownActualSpan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownApproWidth" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownActualWidth" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownApproHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownActualHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApproMaxWaterLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StdMaxWaterLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AdopDesgMaxWaterLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StdDesgMaxWaterLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpBottomWidth" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownBottomWidth" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpSideHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownSideHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DegnMinWaterLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DegnStdMinWaterLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WaterLevelRefSource" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApproDocNum" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ImpNavStd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CompleDate" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SpecialAccep" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApproStdLevelReq" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CurrLevelReq" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TechLevelReq" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PlanLevelReq" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeSpans" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="bridgePillarLights" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="WaterwayMarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HeightScaleSet" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="otherNavMarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MarkMainDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MarkSetAppro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MarkSpecReq" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeCate" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeMgmtDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeStrucType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeMgmtConPerson" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ContactInfo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeCol5Years" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AntiColMgmtDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsAntiCol" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AntiColStrucType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AntiColNum" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AntiColStd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsActWarnSys" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HeightDisplay" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HeightDisplayChnDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HeightDisplayTrnCent" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HeightDisplayStatus" Type="String" MaxLength="600" FixedLength="false" Unicode="false" />
+    <Property Name="BridgeStatus" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BridgePhoto01" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BridgePhoto02" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BridgePhoto03" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BridgePhoto04" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BridgePhoto05" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BridgePhoto06" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup01" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup02" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup03" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup04" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup05" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup06" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup07" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup08" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup09" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Bakup10" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="NavigationInfo">
+    <Key>
+      <PropertyRef Name="NavigationID" />
+    </Key>
+    <Property Name="NavigationID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DamNavStrucType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ChnName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ChnCurrStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ChnPlanStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamLocation" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="BuiltYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Scale" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HasDam" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamRegistInd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamRegistYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamSafeEvalInd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamSafeEvalYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamSafeEvalRusult" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamOperDept" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="DamOperDeptResp" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Capacity" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamMaxHeight" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamTopEle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CheckFloodLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CheckFloodYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DesignFloodLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DesignFloodYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NorWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LimWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DamRegDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="hasLock" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockScale" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpMaxWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpStdMaxWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpMinWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="UpStdMinWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownMaxWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownStdMaxWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownMinWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DownStdMinWaterLvl" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockOperDept" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LockOperDeptResp" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockRegDept" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="RegDeptResp" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockSafeEval" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockSafeEvalYear" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockSafeEvalResult" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LockNavStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Near1to3YPass" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StruTechStatus" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="HasApprOpSch" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Notes" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Photo01" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Photo02" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Photo03" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Photo04" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Photo05" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Photo06" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Backup01" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup02" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup03" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup04" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup05" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup06" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup07" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup08" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup09" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Backup10" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="brimsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BridgeInfo" EntityType="Self.BridgeInfo" />
+    <EntitySet Name="NavigationInfo" EntityType="Self.NavigationInfo" />
+  </EntityContainer>
+</Schema>

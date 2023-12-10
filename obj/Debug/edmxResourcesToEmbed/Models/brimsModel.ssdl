@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="brimsModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="Data Source=D:\sqlite3\mBRIMS.db" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BridgeInfo">
+    <Key>
+      <PropertyRef Name="BridgeID" />
+    </Key>
+    <Property Name="BridgeID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ChnAfairsCenter" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LocArea" Type="varchar" MaxLength="100" />
+    <Property Name="ChnName" Type="varchar" MaxLength="100" />
+    <Property Name="StartPoint" Type="varchar" MaxLength="60" />
+    <Property Name="EndPoint" Type="varchar" MaxLength="60" />
+    <Property Name="Mileage" Type="varchar" MaxLength="30" />
+    <Property Name="ChnDeptBridgeName" Type="varchar" MaxLength="100" />
+    <Property Name="TrnDeptBridgeName" Type="varchar" MaxLength="100" />
+    <Property Name="RawDeptBridgeName" Type="varchar" MaxLength="100" />
+    <Property Name="HgwDeptartmentBridgeName" Type="varchar" MaxLength="100" />
+    <Property Name="OtherBridgeName" Type="varchar" MaxLength="100" />
+    <Property Name="ChnMainLevel" Type="varchar" MaxLength="60" />
+    <Property Name="ChnTechLevel" Type="varchar" MaxLength="60" />
+    <Property Name="ChnPlanLevel" Type="varchar" MaxLength="60" />
+    <Property Name="NavMarkDistCate" Type="varchar" MaxLength="60" />
+    <Property Name="ChnDegnDeptth" Type="varchar" MaxLength="60" />
+    <Property Name="ChnMainDeptth" Type="varchar" MaxLength="60" />
+    <Property Name="MainDeptthRate" Type="varchar" MaxLength="60" />
+    <Property Name="LocRegion" Type="varchar" MaxLength="200" />
+    <Property Name="BridgeLoc" Type="varchar" MaxLength="60" />
+    <Property Name="BridgeCoor" Type="varchar" MaxLength="200" />
+    <Property Name="CrossRiver" Type="varchar" MaxLength="200" />
+    <Property Name="ApproNavHoles" Type="varchar" MaxLength="100" />
+    <Property Name="ActualNavHoles" Type="varchar" MaxLength="100" />
+    <Property Name="UpApproSpan" Type="varchar" MaxLength="100" />
+    <Property Name="UpActualSpan" Type="varchar" MaxLength="100" />
+    <Property Name="UpApproWidth" Type="varchar" MaxLength="100" />
+    <Property Name="UpActualWidth" Type="varchar" MaxLength="100" />
+    <Property Name="UpApproHeight" Type="varchar" MaxLength="100" />
+    <Property Name="UpActualHeight" Type="varchar" MaxLength="100" />
+    <Property Name="DownApproSpan" Type="varchar" MaxLength="100" />
+    <Property Name="DownActualSpan" Type="varchar" MaxLength="100" />
+    <Property Name="DownApproWidth" Type="varchar" MaxLength="100" />
+    <Property Name="DownActualWidth" Type="varchar" MaxLength="100" />
+    <Property Name="DownApproHeight" Type="varchar" MaxLength="100" />
+    <Property Name="DownActualHeight" Type="varchar" MaxLength="100" />
+    <Property Name="ApproMaxWaterLevel" Type="varchar" MaxLength="100" />
+    <Property Name="StdMaxWaterLevel" Type="varchar" MaxLength="100" />
+    <Property Name="AdopDesgMaxWaterLevel" Type="varchar" MaxLength="100" />
+    <Property Name="StdDesgMaxWaterLevel" Type="varchar" MaxLength="100" />
+    <Property Name="UpBottomWidth" Type="varchar" MaxLength="100" />
+    <Property Name="DownBottomWidth" Type="varchar" MaxLength="100" />
+    <Property Name="UpSideHeight" Type="varchar" MaxLength="100" />
+    <Property Name="DownSideHeight" Type="varchar" MaxLength="100" />
+    <Property Name="DegnMinWaterLevel" Type="varchar" MaxLength="100" />
+    <Property Name="DegnStdMinWaterLevel" Type="varchar" MaxLength="100" />
+    <Property Name="WaterLevelRefSource" Type="varchar" MaxLength="100" />
+    <Property Name="ApproDocNum" Type="varchar" MaxLength="100" />
+    <Property Name="ImpNavStd" Type="varchar" MaxLength="100" />
+    <Property Name="CompleDate" Type="varchar" MaxLength="100" />
+    <Property Name="SpecialAccep" Type="varchar" MaxLength="100" />
+    <Property Name="ApproStdLevelReq" Type="varchar" MaxLength="100" />
+    <Property Name="CurrLevelReq" Type="varchar" MaxLength="100" />
+    <Property Name="TechLevelReq" Type="varchar" MaxLength="100" />
+    <Property Name="PlanLevelReq" Type="varchar" MaxLength="100" />
+    <Property Name="BridgeSpans" Type="varchar" MaxLength="100" />
+    <Property Name="bridgePillarLights" Type="varchar" MaxLength="100" />
+    <Property Name="WaterwayMarks" Type="varchar" MaxLength="100" />
+    <Property Name="HeightScaleSet" Type="varchar" MaxLength="100" />
+    <Property Name="otherNavMarks" Type="varchar" MaxLength="100" />
+    <Property Name="MarkMainDept" Type="varchar" MaxLength="100" />
+    <Property Name="MarkSetAppro" Type="varchar" MaxLength="100" />
+    <Property Name="MarkSpecReq" Type="varchar" MaxLength="100" />
+    <Property Name="BridgeCate" Type="varchar" MaxLength="100" />
+    <Property Name="BridgeMgmtDept" Type="varchar" MaxLength="100" />
+    <Property Name="BridgeStrucType" Type="varchar" MaxLength="100" />
+    <Property Name="BridgeMgmtConPerson" Type="varchar" MaxLength="100" />
+    <Property Name="ContactInfo" Type="varchar" MaxLength="100" />
+    <Property Name="BridgeCol5Years" Type="varchar" MaxLength="100" />
+    <Property Name="AntiColMgmtDept" Type="varchar" MaxLength="100" />
+    <Property Name="IsAntiCol" Type="varchar" MaxLength="100" />
+    <Property Name="AntiColStrucType" Type="varchar" MaxLength="100" />
+    <Property Name="AntiColNum" Type="varchar" MaxLength="100" />
+    <Property Name="AntiColStd" Type="varchar" MaxLength="100" />
+    <Property Name="IsActWarnSys" Type="varchar" MaxLength="100" />
+    <Property Name="HeightDisplay" Type="varchar" MaxLength="100" />
+    <Property Name="HeightDisplayChnDept" Type="varchar" MaxLength="100" />
+    <Property Name="HeightDisplayTrnCent" Type="varchar" MaxLength="100" />
+    <Property Name="HeightDisplayStatus" Type="varchar" MaxLength="600" />
+    <Property Name="BridgeStatus" Type="varchar" MaxLength="60" />
+    <Property Name="Remark" Type="varchar" MaxLength="400" />
+    <Property Name="BridgePhoto01" Type="varchar" MaxLength="400" />
+    <Property Name="BridgePhoto02" Type="varchar" MaxLength="400" />
+    <Property Name="BridgePhoto03" Type="varchar" MaxLength="400" />
+    <Property Name="BridgePhoto04" Type="varchar" MaxLength="400" />
+    <Property Name="BridgePhoto05" Type="varchar" MaxLength="400" />
+    <Property Name="BridgePhoto06" Type="varchar" MaxLength="400" />
+    <Property Name="Bakup01" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup02" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup03" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup04" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup05" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup06" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup07" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup08" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup09" Type="varchar" MaxLength="100" />
+    <Property Name="Bakup10" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“main.BridgeInfoIni”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="NavigationInfo">
+    <Key>
+      <PropertyRef Name="NavigationID" />
+    </Key>
+    <Property Name="NavigationID" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DamNavStrucType" Type="varchar" MaxLength="100" />
+    <Property Name="DamName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ChnName" Type="varchar" MaxLength="100" />
+    <Property Name="ChnCurrStatus" Type="varchar" MaxLength="100" />
+    <Property Name="ChnPlanStatus" Type="varchar" MaxLength="100" />
+    <Property Name="DamLocation" Type="varchar" MaxLength="200" />
+    <Property Name="BuiltYear" Type="varchar" MaxLength="100" />
+    <Property Name="Scale" Type="varchar" MaxLength="100" />
+    <Property Name="HasDam" Type="varchar" MaxLength="100" />
+    <Property Name="DamRegistInd" Type="varchar" MaxLength="100" />
+    <Property Name="DamRegistYear" Type="varchar" MaxLength="100" />
+    <Property Name="DamSafeEvalInd" Type="varchar" MaxLength="100" />
+    <Property Name="DamSafeEvalYear" Type="varchar" MaxLength="100" />
+    <Property Name="DamSafeEvalRusult" Type="varchar" MaxLength="100" />
+    <Property Name="DamOperDept" Type="varchar" MaxLength="200" />
+    <Property Name="DamOperDeptResp" Type="varchar" MaxLength="100" />
+    <Property Name="Capacity" Type="varchar" MaxLength="100" />
+    <Property Name="DamType" Type="varchar" MaxLength="100" />
+    <Property Name="DamMaxHeight" Type="varchar" MaxLength="100" />
+    <Property Name="DamTopEle" Type="varchar" MaxLength="100" />
+    <Property Name="CheckFloodLvl" Type="varchar" MaxLength="100" />
+    <Property Name="CheckFloodYear" Type="varchar" MaxLength="100" />
+    <Property Name="DesignFloodLvl" Type="varchar" MaxLength="100" />
+    <Property Name="DesignFloodYear" Type="varchar" MaxLength="100" />
+    <Property Name="NorWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="LimWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="DamRegDept" Type="varchar" MaxLength="100" />
+    <Property Name="hasLock" Type="varchar" MaxLength="100" />
+    <Property Name="LockLevel" Type="varchar" MaxLength="100" />
+    <Property Name="LockScale" Type="varchar" MaxLength="100" />
+    <Property Name="UpMaxWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="UpStdMaxWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="UpMinWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="UpStdMinWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="DownMaxWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="DownStdMaxWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="DownMinWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="DownStdMinWaterLvl" Type="varchar" MaxLength="100" />
+    <Property Name="LockOperDept" Type="varchar" MaxLength="200" />
+    <Property Name="LockOperDeptResp" Type="varchar" MaxLength="100" />
+    <Property Name="LockRegDept" Type="varchar" MaxLength="100" />
+    <Property Name="RegDeptResp" Type="varchar" MaxLength="100" />
+    <Property Name="LockSafeEval" Type="varchar" MaxLength="100" />
+    <Property Name="LockSafeEvalYear" Type="varchar" MaxLength="100" />
+    <Property Name="LockSafeEvalResult" Type="varchar" MaxLength="100" />
+    <Property Name="LockNavStatus" Type="varchar" MaxLength="100" />
+    <Property Name="Near1to3YPass" Type="varchar" MaxLength="100" />
+    <Property Name="StruTechStatus" Type="varchar" MaxLength="200" />
+    <Property Name="HasApprOpSch" Type="varchar" MaxLength="300" />
+    <Property Name="Notes" Type="varchar" MaxLength="400" />
+    <Property Name="Photo01" Type="varchar" MaxLength="400" />
+    <Property Name="Photo02" Type="varchar" MaxLength="400" />
+    <Property Name="Photo03" Type="varchar" MaxLength="400" />
+    <Property Name="Photo04" Type="varchar" MaxLength="400" />
+    <Property Name="Photo05" Type="varchar" MaxLength="400" />
+    <Property Name="Photo06" Type="varchar" MaxLength="400" />
+    <Property Name="Backup01" Type="varchar" MaxLength="100" />
+    <Property Name="Backup02" Type="varchar" MaxLength="100" />
+    <Property Name="Backup03" Type="varchar" MaxLength="100" />
+    <Property Name="Backup04" Type="varchar" MaxLength="100" />
+    <Property Name="Backup05" Type="varchar" MaxLength="100" />
+    <Property Name="Backup06" Type="varchar" MaxLength="100" />
+    <Property Name="Backup07" Type="varchar" MaxLength="100" />
+    <Property Name="Backup08" Type="varchar" MaxLength="100" />
+    <Property Name="Backup09" Type="varchar" MaxLength="100" />
+    <Property Name="Backup10" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“main.NavigationInfoIni”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityContainer Name="brimsModelStoreContainer">
+    <EntitySet Name="BridgeInfo" EntityType="Self.BridgeInfo" store:Type="Tables" />
+    <EntitySet Name="NavigationInfo" EntityType="Self.NavigationInfo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

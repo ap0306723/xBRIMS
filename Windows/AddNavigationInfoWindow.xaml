@@ -1,0 +1,187 @@
+﻿<mah:MetroWindow  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"  x:Class="xBRIMS.Windows.AddNavigationInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xBRIMS.Windows"
+        mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource Locator},Path=AddNavigationInfo}"
+        WindowStartupLocation="CenterScreen"
+        Title="新增航运枢纽大坝和通航建筑物信息"  Height="800" Width="1200">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Text="{Binding NavigationInfo.DamName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid Margin="10" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Grid.ColumnSpan="6" Margin="10,0,0,0" Orientation="Horizontal">
+                        <Label       Content="航运枢纽大坝和通航建筑物类型:" HorizontalAlignment="Stretch"  VerticalAlignment="Center" FontSize="14" FontWeight="Bold"   />
+                        <TextBox     Text="{Binding NavigationInfo.DamNavStrucType,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Stretch"  VerticalAlignment="Center" FontSize="12"  Width="300" Margin="5"/>
+
+                    </StackPanel>
+
+
+                    <Label    Grid.Row=" 2" Grid.Column="0"   Content="航运枢纽大坝名称:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 2" Grid.Column="1"   Text="{Binding NavigationInfo.DamName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"   VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 2" Grid.Column="2"   Content="航道名称:"                                                                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 2" Grid.Column="3"   Text="{Binding NavigationInfo.ChnName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"       VerticalAlignment="Center" FontSize="12" Margin="5" />
+
+                    <Label    Grid.Row=" 3" Grid.Column="0"   Content="航道等级现状:"                                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="1"   Text="{Binding NavigationInfo.ChnCurrStatus,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5"/>
+                    <Label    Grid.Row=" 3" Grid.Column="2"   Content="航道等级规划:"                                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="3"   Text="{Binding NavigationInfo.ChnPlanStatus,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                      VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 3" Grid.Column="4"   Content="航运枢纽大坝所在地:"                                                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="5"   Text="{Binding NavigationInfo.DamLocation,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                        VerticalAlignment="Center" FontSize="12" Margin="5"/>
+                    <Label    Grid.Row=" 3" Grid.Column="6"   Content="建成年份:"                                                                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="7"   Text="{Binding NavigationInfo.BuiltYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                          VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 3" Grid.Column="8"   Content="规模:"                                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 3" Grid.Column="9"   Text="{Binding NavigationInfo.Scale,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                               VerticalAlignment="Center" FontSize="12" Margin="5" />
+
+
+                    <Label    Grid.Row=" 4" Grid.Column="0"   Content="是否有大坝:"                                                                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="1"   Text="{Binding NavigationInfo.HasDam,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                               VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 4" Grid.Column="2"   Content="大坝是否注册登记:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="3"   Text="{Binding NavigationInfo.DamRegistInd,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                        VerticalAlignment="Center" FontSize="12" Margin="5"/>
+                    <Label    Grid.Row=" 4" Grid.Column="4"   Content="大坝登记年份:"                                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="5"   Text="{Binding NavigationInfo.DamRegistYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5"/>
+                    <Label    Grid.Row=" 4" Grid.Column="6"   Content="大坝是否安全鉴定:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="7"   Text="{Binding NavigationInfo.DamSafeEvalInd,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                     VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 4" Grid.Column="8"   Content="大坝安全鉴定年份:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 4" Grid.Column="9"   Text="{Binding NavigationInfo.DamSafeEvalYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5"  />
+
+                    <Label    Grid.Row=" 5" Grid.Column="0"   Content="大坝安全鉴定结果:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="1"   Text="{Binding NavigationInfo.DamSafeEvalRusult,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                   VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 5" Grid.Column="2"   Content="大坝运行单位:"                                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="3"   Text="{Binding NavigationInfo.DamOperDept,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                        VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 5" Grid.Column="4"   Content="大坝运行单位责任人:"                                                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="5"   Text="{Binding NavigationInfo.DamOperDeptResp,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 5" Grid.Column="6"   Content="库容（万立方米）:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="7"   Text="{Binding NavigationInfo.Capacity,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                          VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 5" Grid.Column="8"   Content="坝型:"                                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 5" Grid.Column="9"   Text="{Binding NavigationInfo.DamType,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                            VerticalAlignment="Center" FontSize="12" Margin="5" />
+
+                    <Label    Grid.Row=" 6" Grid.Column="0"   Content="最大坝高（米）:"                                                                 VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="1"   Text="{Binding NavigationInfo.DamMaxHeight,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 6" Grid.Column="2"   Content="坝顶高程（m）:"                                                                  VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="3"   Text="{Binding NavigationInfo.DamTopEle,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                        VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 6" Grid.Column="4"   Content="校核洪水位（m）:"                                                                VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="5"   Text="{Binding NavigationInfo.CheckFloodLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 6" Grid.Column="6"   Content="校核洪水标准(年):"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="7"   Text="{Binding NavigationInfo.CheckFloodYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 6" Grid.Column="8"   Content="设计洪水位（m）:"                                                                VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 6" Grid.Column="9"   Text="{Binding NavigationInfo.DesignFloodLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5"  />
+
+                    <Label    Grid.Row=" 7" Grid.Column="0"   Content="设计洪水标准(年):"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="1"   Text="{Binding NavigationInfo.DesignFloodYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 7" Grid.Column="2"   Content="正常蓄水位（m）:"                                                                VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="3"   Text="{Binding NavigationInfo.NorWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 7" Grid.Column="4"   Content="汛限水位（m）:"                                                                  VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="5"   Text="{Binding NavigationInfo.LimWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 7" Grid.Column="6"   Content="大坝行业监管单位:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="7"   Text="{Binding NavigationInfo.DamRegDept,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                        VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 7" Grid.Column="8"   Content="是否有船闸:"                                                                     VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 7" Grid.Column="9"   Text="{Binding NavigationInfo.hasLock,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                          VerticalAlignment="Center" FontSize="12" Margin="5" />
+
+
+                    <Label    Grid.Row=" 8" Grid.Column="0"   Content="船闸等级:"                                                                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="1"   Text="{Binding NavigationInfo.LockLevel,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                        VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 8" Grid.Column="2"   Content="船闸尺度（长×宽×门槛水深）:"                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="3"   Text="{Binding NavigationInfo.LockScale,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                         VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 8" Grid.Column="4"   Content="上游最高通航水位:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="5"   Text="{Binding NavigationInfo.UpMaxWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 8" Grid.Column="6"   Content="上游标准最高通航水位:"                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="7"   Text="{Binding NavigationInfo.UpStdMaxWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                  VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 8" Grid.Column="8"   Content="上游最低通航水位:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 8" Grid.Column="9"   Text="{Binding NavigationInfo.UpMinWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                 VerticalAlignment="Center" FontSize="12" Margin="5"  />
+
+                    <Label    Grid.Row=" 9" Grid.Column="0"   Content="上游标准最低通航水位:"                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="1"   Text="{Binding NavigationInfo.UpStdMinWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"             VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 9" Grid.Column="2"   Content="下游最高通航水位:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="3"   Text="{Binding NavigationInfo.DownMaxWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                 VerticalAlignment="Center" FontSize="12" Margin="5"  />
+                    <Label    Grid.Row=" 9" Grid.Column="4"   Content="下游标准最高通航水位:"                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="5"   Text="{Binding NavigationInfo.DownStdMaxWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                 VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 9" Grid.Column="6"   Content="下游最低通航水位:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="7"   Text="{Binding NavigationInfo.DownMinWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"             VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row=" 9" Grid.Column="8"   Content="下游标准最低通航水位:"                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row=" 9" Grid.Column="9"   Text="{Binding NavigationInfo.DownStdMinWaterLvl,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"             VerticalAlignment="Center" FontSize="12" Margin="5"/>
+
+                    <Label    Grid.Row="10" Grid.Column="0"   Content="船闸运行单位:"                                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="1"   Text="{Binding NavigationInfo.LockOperDept,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                   VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="10" Grid.Column="2"   Content="船闸运行单位责任人:"                                                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="3"   Text="{Binding NavigationInfo.LockOperDeptResp,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"               VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="10" Grid.Column="4"   Content="船闸行业监管单位:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="5"   Text="{Binding NavigationInfo.LockRegDept,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                 VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="10" Grid.Column="6"   Content="安全监管部门责任人:"                                                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="7"   Text="{Binding NavigationInfo.RegDeptResp,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                   VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="10" Grid.Column="8"   Content="船闸是否安全鉴定:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="10" Grid.Column="9"   Text="{Binding NavigationInfo.LockSafeEval,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                       VerticalAlignment="Center" FontSize="12" Margin="5" />
+
+                    <Label    Grid.Row="11" Grid.Column="0"   Content="船闸安全鉴定年份:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="1"   Text="{Binding NavigationInfo.LockSafeEvalYear,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                  VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="11" Grid.Column="2"   Content="船闸安全鉴定结果:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="3"   Text="{Binding NavigationInfo.LockSafeEvalResult,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="11" Grid.Column="4"   Content="船闸通航现状:"                                                                   VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="5"   Text="{Binding NavigationInfo.LockNavStatus,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                     VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="11" Grid.Column="6"   Content="近一年或三年的船舶通行量:"                                                       VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="7"   Text="{Binding NavigationInfo.Near1to3YPass,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                   VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="11" Grid.Column="8"   Content="通航建筑物技术状态:"                                                             VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="11" Grid.Column="9"   Text="{Binding NavigationInfo.StruTechStatus,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                     VerticalAlignment="Center" FontSize="12" Margin="5" />
+
+                    <Label    Grid.Row="12" Grid.Column="0"   Content="是否批复运行方案:"                                                               VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="12" Grid.Column="1"   Text="{Binding NavigationInfo.HasApprOpSch,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                    VerticalAlignment="Center" FontSize="12" Margin="5" />
+                    <Label    Grid.Row="12" Grid.Column="2"   Content="备注:"                                                                           VerticalAlignment="Center" FontSize="14" FontWeight="Bold" Margin="10,0,0,0" />
+                    <TextBox  Grid.Row="12" Grid.Column="3"   Text="{Binding NavigationInfo.Notes,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"                              VerticalAlignment="Center" FontSize="12" Margin="5" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Grid.Row="3" Margin="60 0 0 0" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="添加" Width="80" Command="{Binding AddNavigationInfoCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}" />
+                    <Button Content="取消" Width="80" Command="{Binding CloseCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}" Margin="40 0 0 0"/>
+                </StackPanel>
+
+            </Grid>
+
+
+
+
+        </Grid>
+    </ScrollViewer>
+</mah:MetroWindow>
